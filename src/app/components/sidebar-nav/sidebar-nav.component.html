@@ -38,9 +38,116 @@
     </h4>
     <ul class="nav flex-column mb-2">
       <li class="nav-item">
+        <a
+          class="nav-link collapsed"
+          href="#"
+          data-bs-toggle="collapse"
+          data-bs-target="#layout-collapse-almacenes"
+          aria-expanded="false"
+        >
+          <span><i class="bi bi bi-building"></i></span>
+          Empresa
+        </a>
+
+        <div class="collapse" id="layout-collapse-almacenes">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [routerLink]="['/almacenes']"
+                routerLinkActive="active"
+              >
+                <span><i class="bi bi-record-fill"></i></span>
+                Almacenes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [routerLink]="['/productos']"
+                routerLinkActive="active"
+              >
+                <span><i class="bi bi-record-fill"></i></span>
+                Productos/Servicios
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [routerLink]="['/comprobanteCobro']"
+                routerLinkActive="active"
+              >
+                <span><i class="bi bi-record-fill"></i></span>
+                Comprobantes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link collapsed"
+          href="#"
+          data-bs-toggle="collapse"
+          data-bs-target="#layout-collapse"
+          aria-expanded="false"
+        >
+          <span><i class="bi bi-upc-scan"></i></span>
+          Facturacion/Finanzas
+        </a>
+
+        <div class="collapse" id="layout-collapse">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [routerLink]="['/facturar']"
+                routerLinkActive="active"
+              >
+                <span><i class="bi bi-record-fill"></i></span>
+                Por Facturar
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [routerLink]="['/facturas']"
+                routerLinkActive="active"
+              >
+                <span><i class="bi bi-record-fill"></i></span>
+                Pendiente de cobro
+              </a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                aria-current="page"
+                [routerLink]="['/comprobanteCobro']"
+                routerLinkActive="active"
+              >
+                <span><i class="bi bi-record-fill"></i></span>
+                Comprobantes
+              </a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <li class="nav-item">
         <a class="nav-link" href="#">
           <span><i class="bi bi-truck"></i></span>
           Productos
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+          <span><i class="bi bi-archive-fill"></i></span>
+          Almacenes
         </a>
       </li>
       <li class="nav-item">
@@ -51,7 +158,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#">
-          <span><i class="bi bi-file-earmark-person"></i></span>
+          <span><i class="bi bi-upc-scan"></i></span>
           Ventas
         </a>
       </li>
@@ -62,47 +169,6 @@
         </a>
       </li>
 
-
-
-      <li class="nav-item" >
-        <a
-          class="nav-link collapsed"
-          href="#"
-          data-bs-toggle="collapse"
-          data-bs-target="#layout-collapse"
-          aria-expanded="false"
-        >
-          <span><i class="bi bi-file-earmark-bar-graph"></i></span>
-          Contabilidad
-
-        </a>
-
-        <div class="collapse" id="layout-collapse">
-          <ul class="nav flex-column">
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                aria-current="page"
-                [routerLink]="['/home']"
-                routerLinkActive="active"
-              >
-              <span><i class="bi bi-record-fill"></i></span>
-                Notas de venta
-              </a>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link"
-                [routerLink]="['/sales']"
-                routerLinkActive="active"
-              >
-              <span><i class="bi bi-record-fill"></i></span>
-                Vender
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
     </ul>
 
     <h4
